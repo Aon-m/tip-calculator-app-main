@@ -1,0 +1,32 @@
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.fast-slow-hover {
+  transition: 500ms ease;
+  cursor: pointer;
+
+  &:hover {
+    transition: 200ms ease;
+  }
+}
+
+.open-div {
+  animation: open-up 400ms ease forwards;
+  will-change: max-height;
+}
+
+@keyframes open-up {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 5rem;
+  }
+}

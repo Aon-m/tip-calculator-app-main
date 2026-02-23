@@ -1,0 +1,16 @@
+.icon {
+  &--small {
+    width: var(--size-sm);
+    height: auto;
+  }
+  &--medium {
+    width: var(--size-md);
+    height: auto;
+  }
+  &--primary {
+    color: var(--color-primary);
+  }
+  &--secondary {
+    color: var(--color-neutral-4);
+  }
+}

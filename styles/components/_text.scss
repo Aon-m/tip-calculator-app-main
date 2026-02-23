@@ -1,0 +1,25 @@
+.text {
+  text-align: left;
+  font-family: "Space Mono", monospace, sans-serif;
+
+  &--primary {
+    color: var(--color-primary);
+  }
+  &--secondary {
+    color: var(--color-neutral-0);
+  }
+  &--tertiary {
+    color: var(--color-neutral-4);
+  }
+
+  &--medium {
+    font-size: var(--fs-md);
+  }
+  &--large {
+    font-size: var(--fs-lg);
+  }
+
+  &--bold {
+    font-weight: var(--fw-bold);
+  }
+}

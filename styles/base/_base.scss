@@ -1,0 +1,32 @@
+:root {
+  /* Colors */
+  /* Primary color */
+  --color-primary: hsl(172, 67%, 45%);
+
+  /* Neutral colors */
+  --color-neutral-0: hsl(0, 100%, 100%);
+  --color-neutral-1: hsl(189, 47%, 97%);
+  --color-neutral-2: hsl(185, 41%, 84%);
+  --color-neutral-3: hsl(184, 14%, 56%);
+  --color-neutral-4: hsl(186, 14%, 43%);
+  --color-neutral-5: hsl(183, 100%, 15%);
+
+  /* Spacing sizes */
+  --size-xs: clamp(0.5rem, calc(0.35rem + 0.4vw), 1rem);
+  --size-sm: clamp(1rem, calc(1.25rem + 0.5vw), 1.75rem);
+  --size-md: clamp(1.5rem, calc(2rem + 0.5vw), 3rem);
+
+  /* Font sizes */
+  --fs-md: clamp(1.5rem, calc(1.3rem + 1vw), 2rem);
+  --fs-lg: clamp(2rem, calc(1.8rem + 1.2vw), 3rem);
+
+  /* Font weight */
+  --fw-bold: 700;
+
+  /* Tablet and Desktop */
+  @media screen and (min-width: 40rem) {
+    /* Font sizes */
+    --fs-md: clamp(1.5rem, calc(1.3rem + 0.3vw), 5rem);
+    --fs-lg: clamp(3rem, calc(2rem + 0.5vw), 9rem);
+  }
+}
