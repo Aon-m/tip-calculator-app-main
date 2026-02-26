@@ -15,8 +15,10 @@
   --size-xs: clamp(0.5rem, calc(0.35rem + 0.4vw), 1rem);
   --size-sm: clamp(1rem, calc(1.25rem + 0.5vw), 1.75rem);
   --size-md: clamp(1.5rem, calc(2rem + 0.5vw), 3rem);
+  --size-lg: clamp(6rem, calc(6rem + 1vw), 10rem);
 
   /* Font sizes */
+  --fs-sm: clamp(1rem, calc(0.8rem + 0.7vw), 1.3rem);
   --fs-md: clamp(1.5rem, calc(1.3rem + 1vw), 2rem);
   --fs-lg: clamp(2rem, calc(1.8rem + 1.2vw), 3rem);
 
@@ -26,6 +28,7 @@
   /* Tablet and Desktop */
   @media screen and (min-width: 40rem) {
     /* Font sizes */
+    --fs-sm: clamp(1rem, calc(0.8rem + 0.2vw), 3rem);
     --fs-md: clamp(1.5rem, calc(1.3rem + 0.3vw), 5rem);
     --fs-lg: clamp(3rem, calc(2rem + 0.5vw), 9rem);
   }

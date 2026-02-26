@@ -1,5 +1,6 @@
+@use "../abstracts/mixins" as m;
+
 .text {
-  text-align: left;
   font-family: "Space Mono", monospace, sans-serif;
 
   &--primary {
@@ -12,6 +13,12 @@
     color: var(--color-neutral-4);
   }
 
+  &--smaller {
+    font-size: calc(var(--fs-sm) - 0.1rem);
+  }
+  &--small {
+    font-size: var(--fs-sm);
+  }
   &--medium {
     font-size: var(--fs-md);
   }
@@ -21,5 +28,18 @@
 
   &--bold {
     font-weight: var(--fw-bold);
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &__container {
+    @include m.flex(row);
+    gap: calc(var(--size-xs) / 3);
   }
 }

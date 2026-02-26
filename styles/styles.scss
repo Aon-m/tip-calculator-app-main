@@ -7,8 +7,34 @@
 @use "./base/base";
 
 // Components
+@use "./components/text";
+@use "./components/calculator";
 @use "./components/animations";
 @use "./components/attribution";
 @use "./components/button";
 @use "./components/icon";
-@use "./components/text";
+@use "./components/form";
+
+header {
+  @include m.flex(column);
+  width: 100%;
+  padding-block: calc(var(--size-md) + 1rem);
+}
+
+body {
+  @include m.flex(column);
+  background: var(--color-neutral-2);
+}
+
+main {
+  @media screen and (min-width: 60rem) {
+    margin-block: auto;
+  }
+}
+
+footer {
+  margin-block-start: var(--size-md);
+  @media screen and (min-width: 60rem) {
+    margin-block-start: 0;
+  }
+}

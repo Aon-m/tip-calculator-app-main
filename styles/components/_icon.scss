@@ -1,15 +1,29 @@
 .icon {
   &--small {
-    width: var(--size-sm);
+    width: clamp(0.5rem, calc(0.3rem + 0.3vw), 0.8rem);
     height: auto;
   }
   &--medium {
-    width: var(--size-md);
+    width: clamp(0.8rem, calc(0.5rem + 0.5vw), 1.2rem);
     height: auto;
   }
+  &--large {
+    width: clamp(1rem, calc(1rem + 1vw), 2.5rem);
+    height: auto;
+  }
+  &--larger {
+    width: clamp(4rem, calc(4rem + 1vw), 10rem);
+    height: auto;
+  }
+
   &--primary {
     color: var(--color-primary);
   }
+  &--bold {
+    stroke: var(--color-primary);
+    stroke-width: 0.5px;
+  }
+
   &--secondary {
     color: var(--color-neutral-4);
   }

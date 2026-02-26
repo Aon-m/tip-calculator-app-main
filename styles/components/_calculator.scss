@@ -1,0 +1,50 @@
+@use "../abstracts/mixins" as m;
+
+.calculator {
+  width: clamp(20rem, 100vw, 30rem);
+  background: var(--color-neutral-0);
+  border-radius: var(--size-sm);
+  padding: var(--size-md);
+  gap: var(--size-md);
+
+  &__controls {
+    @include m.flex(column, flex-start);
+    width: 100%;
+    gap: var(--size-sm);
+  }
+
+  &__output {
+    @include m.flex(column);
+    gap: var(--size-sm);
+    background: var(--color-neutral-5);
+    width: 100%;
+    padding: var(--size-sm);
+    border-radius: var(--size-sm);
+  }
+
+  &__result {
+    @include m.flex(row, center, space-between);
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .calculator {
+    padding: var(--size-sm);
+    width: auto;
+    height: auto;
+
+    &__controls {
+      height: 100%;
+      justify-content: space-between;
+      width: clamp(20rem, calc(20rem + 5vw), 40rem);
+    }
+
+    &__output {
+      height: 100%;
+      min-height: 25rem;
+      width: clamp(20rem, calc(20rem + 5vw), 40rem);
+      justify-content: space-between;
+    }
+  }
+}

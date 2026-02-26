@@ -3,10 +3,11 @@
 .button {
   background: transparent;
   cursor: pointer;
+  border: none;
 
   &--rectangle {
-    padding: calc(var(--size-xs) + 0.3rem) calc(var(--size-sm) - 0.3rem);
-    border-radius: var(--size-xs);
+    border-radius: calc(var(--size-sm) - 1rem);
+    padding-block: calc(var(--size-xs) - 0.3rem);
 
     @media screen and (min-width: 65rem) {
       padding: var(--size-xs) calc(var(--size-sm) - 0.5rem);
@@ -19,7 +20,7 @@
 
   &--primary {
     background: var(--color-primary);
-    color: var(--color-neutral-4);
+    color: var(--color-neutral-5);
 
     &:hover {
       background: var(--color-neutral-2);
@@ -27,17 +28,23 @@
   }
 
   &--secondary {
-    background: var(--color-neutral-4);
+    background: var(--color-neutral-5);
     color: var(--color-neutral-0);
 
     &:hover {
-      background: var(--color-neutral-2);
-      color: var(--color-neutral-4);
+      background: var(--color-primary);
+      color: var(--color-neutral-5);
     }
   }
 
   &--selected {
     background: var(--color-primary);
     color: var(--color-neutral-4);
+  }
+
+  &--custom {
+    @media screen and (min-width: 60rem) {
+      margin-block-start: auto;
+    }
   }
 }
