@@ -58,50 +58,9 @@ body {
   :root {
     /* Font sizes */
     --fs-sm: clamp(1rem, calc(0.8rem + 0.2vw), 3rem);
-    --fs-md: clamp(1.5rem, calc(1.3rem + 0.3vw), 5rem);
-    --fs-lg: clamp(3rem, calc(2rem + 0.5vw), 9rem);
+    --fs-md: clamp(1.3rem, calc(1.3rem + 0.3vw), 5rem);
+    --fs-lg: clamp(2rem, calc(2rem + 0.5vw), 9rem);
   }
-}
-
-.text {
-  font-family: "Space Mono", monospace, sans-serif;
-}
-.text--primary {
-  color: var(--color-primary);
-}
-.text--secondary {
-  color: var(--color-neutral-0);
-}
-.text--tertiary {
-  color: var(--color-neutral-4);
-}
-.text--smaller {
-  font-size: calc(var(--fs-sm) - 0.1rem);
-}
-.text--small {
-  font-size: var(--fs-sm);
-}
-.text--medium {
-  font-size: var(--fs-md);
-}
-.text--large {
-  font-size: var(--fs-lg);
-}
-.text--bold {
-  font-weight: var(--fw-bold);
-}
-.text--center {
-  text-align: center;
-}
-.text--uppercase {
-  text-transform: uppercase;
-}
-.text__container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: calc(var(--size-xs) / 3);
 }
 
 .calculator {
@@ -151,7 +110,7 @@ body {
   }
   .calculator__output {
     height: 100%;
-    min-height: 25rem;
+    min-height: 22rem;
     width: clamp(20rem, 20rem + 5vw, 40rem);
     justify-content: space-between;
   }
@@ -270,6 +229,47 @@ body {
   color: var(--color-neutral-4);
 }
 
+.text {
+  font-family: "Space Mono", monospace, sans-serif;
+}
+.text--primary {
+  color: var(--color-primary);
+}
+.text--secondary {
+  color: var(--color-neutral-0);
+}
+.text--tertiary {
+  color: var(--color-neutral-4);
+}
+.text--smaller {
+  font-size: calc(var(--fs-sm) - 0.1rem);
+}
+.text--small {
+  font-size: var(--fs-sm);
+}
+.text--medium {
+  font-size: var(--fs-md);
+}
+.text--large {
+  font-size: var(--fs-lg);
+}
+.text--bold {
+  font-weight: var(--fw-bold);
+}
+.text--center {
+  text-align: center;
+}
+.text--uppercase {
+  text-transform: uppercase;
+}
+.text__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--size-xs) / 3);
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -368,6 +368,11 @@ header {
   width: 100%;
   padding-block: calc(var(--size-md) + 1rem);
 }
+@media screen and (min-width: 60rem) {
+  header {
+    padding-block: var(--size-md) var(--size-sm);
+  }
+}
 
 body {
   display: flex;
@@ -386,7 +391,7 @@ body {
 footer {
   margin-block-start: var(--size-md);
 }
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 80rem) {
   footer {
     margin-block-start: 0;
   }

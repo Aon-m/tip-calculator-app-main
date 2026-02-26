@@ -32,7 +32,7 @@
   @media screen and (min-width: 40rem) {
     /* Font sizes */
     --fs-sm: clamp(1rem, calc(0.8rem + 0.2vw), 3rem);
-    --fs-md: clamp(1.5rem, calc(1.3rem + 0.3vw), 5rem);
-    --fs-lg: clamp(3rem, calc(2rem + 0.5vw), 9rem);
+    --fs-md: clamp(1.3rem, calc(1.3rem + 0.3vw), 5rem);
+    --fs-lg: clamp(2rem, calc(2rem + 0.5vw), 9rem);
   }
 }

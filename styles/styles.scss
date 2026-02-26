@@ -7,12 +7,12 @@
 @use "./base/base";
 
 // Components
-@use "./components/text";
 @use "./components/calculator";
 @use "./components/animations";
 @use "./components/attribution";
 @use "./components/button";
 @use "./components/icon";
+@use "./components/text";
 @use "./components/form";
 @use "./components/error";
 
@@ -20,6 +20,9 @@ header {
   @include m.flex(column);
   width: 100%;
   padding-block: calc(var(--size-md) + 1rem);
+  @media screen and (min-width: 60rem) {
+    padding-block: var(--size-md) var(--size-sm);
+  }
 }
 
 body {
@@ -35,7 +38,7 @@ main {
 
 footer {
   margin-block-start: var(--size-md);
-  @media screen and (min-width: 60rem) {
+  @media screen and (min-width: 80rem) {
     margin-block-start: 0;
   }
 }
