@@ -39,6 +39,8 @@ body {
   --color-neutral-3: hsl(184, 14%, 56%);
   --color-neutral-4: hsl(186, 14%, 43%);
   --color-neutral-5: hsl(183, 100%, 15%);
+  /* Status color */
+  --color-error: hsl(4, 100%, 67%);
   /* Spacing sizes */
   --size-xs: clamp(0.5rem, calc(0.35rem + 0.4vw), 1rem);
   --size-sm: clamp(1rem, calc(1.25rem + 0.5vw), 1.75rem);
@@ -330,6 +332,11 @@ body {
 }
 .form__label {
   grid-column: 1/-1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media screen and (min-width: 60rem) {
@@ -337,6 +344,22 @@ body {
     flex-direction: row;
   }
 }
+.error__input {
+  outline: 0.2rem solid var(--color-error);
+  background: transparent;
+  z-index: 1;
+}
+.error__input:focus {
+  outline: 0.2rem solid var(--color-error);
+}
+.error__input:hover {
+  outline: 0.2rem solid var(--color-error);
+  cursor: pointer;
+}
+.error__message {
+  color: var(--color-error);
+}
+
 header {
   display: flex;
   flex-direction: column;

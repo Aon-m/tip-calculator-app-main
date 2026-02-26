@@ -58,8 +58,11 @@
     left: var(--size-xs);
     transform: translateY(-50%);
   }
+  
   &__label {
     grid-column: 1 / -1;
+    @include m.flex(row, center, space-between);
+    width: 100%;
   }
 }
 

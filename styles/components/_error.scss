@@ -1,0 +1,20 @@
+.error {
+  &__input {
+    outline: 0.2rem solid var(--color-error);
+    background: transparent;
+    z-index: 1;
+
+    &:focus {
+      outline: 0.2rem solid var(--color-error);
+    }
+
+    &:hover {
+      outline: 0.2rem solid var(--color-error);
+      cursor: pointer;
+    }
+  }
+
+  &__message {
+    color: var(--color-error);
+  }
+}

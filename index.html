@@ -46,7 +46,7 @@
             <label
               class="form__label text text--small text--tertiary"
               for="bill"
-              >Bill</label
+              >Bill <span class="error__message hidden">Can't be zero</span></label
             >
             <div class="form__input-wrapper">
               <input
@@ -113,7 +113,8 @@
             <label
               class="form__label text text--small text--tertiary"
               for="people"
-              >Number of People</label
+              >Number of People
+              <span class="error__message hidden">Can't be zero</span></label
             >
             <div class="form__input-wrapper">
               <input
@@ -140,7 +141,7 @@
         </div>
         <div class="calculator__output">
           <div class="calculator__result">
-            <div class="form__label">
+            <div>
               <p class="text text--small text--secondary">Tip Amount</p>
               <span class="text text--smaller text--tertiary">/ person</span>
             </div>
@@ -160,7 +161,7 @@
             </output>
           </div>
           <div class="calculator__result">
-            <div class="form__label">
+            <div>
               <p class="text text--small text--secondary">Total</p>
               <span class="text text--smaller text--tertiary">/ person</span>
             </div>
