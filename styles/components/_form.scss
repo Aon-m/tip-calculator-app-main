@@ -36,14 +36,19 @@
     color: var(--color-neutral-5);
     text-align: right;
     border: none;
-    padding-inline-end: var(--size-xs);
+    border: 0.2rem solid transparent;
 
     &::placeholder {
       color: var(--color-neutral-3);
     }
 
     &:focus {
-      outline: none;
+      outline: 0.2rem solid var(--color-primary);
+    }
+
+    &:hover {
+      outline: 0.2rem solid var(--color-primary);
+      cursor: pointer;
     }
   }
 

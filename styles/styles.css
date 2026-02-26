@@ -228,7 +228,7 @@ body {
   color: var(--color-neutral-0);
 }
 .button--secondary:hover {
-  background: var(--color-primary);
+  background: var(--color-neutral-2);
   color: var(--color-neutral-5);
 }
 .button--selected {
@@ -307,7 +307,7 @@ body {
   color: var(--color-neutral-5);
   text-align: right;
   border: none;
-  padding-inline-end: var(--size-xs);
+  border: 0.2rem solid transparent;
 }
 .form__input::-moz-placeholder {
   color: var(--color-neutral-3);
@@ -316,7 +316,11 @@ body {
   color: var(--color-neutral-3);
 }
 .form__input:focus {
-  outline: none;
+  outline: 0.2rem solid var(--color-primary);
+}
+.form__input:hover {
+  outline: 0.2rem solid var(--color-primary);
+  cursor: pointer;
 }
 .form__unit {
   position: absolute;
