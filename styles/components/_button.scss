@@ -39,7 +39,11 @@
 
   &--selected {
     background: var(--color-primary);
-    color: var(--color-neutral-4);
+    color: var(--color-neutral-5);
+
+    &:hover {
+      background: var(--color-primary);
+    }
   }
 
   &--custom {
