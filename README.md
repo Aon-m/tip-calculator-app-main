@@ -12,6 +12,9 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
+    - [AI Collaboration](#ai-collaboration)
+      - [What tools did I use?](#what-tools-did-i-use)
+      - [How did I use them?](#how-did-i-use-them)
   - [Author](#author)
 
 ## Overview
@@ -59,6 +62,19 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - Personal Code Library
+
+### AI Collaboration
+
+#### What tools did I use?
+
+I used ChatGPT as my primary AI assistant
+
+#### How did I use them?
+
+- Debugging
+- SEO, Accessibility, and Best Practices.
+- Workflow Advice
+- Code syntax
 
 ## Author
 
